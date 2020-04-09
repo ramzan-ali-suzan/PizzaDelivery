@@ -1,4 +1,5 @@
 ﻿using PizzaDelivery.Models;
+using PizzaDelivery.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,16 +12,16 @@ namespace PizzaDelivery.Controllers
     [RoutePrefix("api/pizza")]
     public class PizzaController : ApiController
     {
-        private readonly ApplicationDbContext _context;
+        private readonly PizzaService _service;
 
-        public PizzaController(ApplicationDbContext context)
+        public PizzaController(PizzaService service)
         {
-            _context = context;
+            _service = service;
         }
 
         public IEnumerable<Pizza> Get()
         {
-            return _context.Pizzas;
+            return _service.GetPizzas();
         }
     }
 }

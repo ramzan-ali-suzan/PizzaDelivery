@@ -188,6 +188,7 @@
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Pizza.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\PizzaService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
