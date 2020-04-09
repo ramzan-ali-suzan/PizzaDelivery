@@ -1,5 +1,5 @@
 # PizzaDelivery
-This is a simple ASP.NET Web API Application (.Net Framework) with [Unity](http://unitycontainer.org/) as a dependency injection container. For the demo purpose only the `PizzaController` is injected with `ApplicationDbContext`.
+This is a simple ASP.NET Web API Application (.Net Framework) with [Unity](http://unitycontainer.org/) as a dependency injection container. For the demo purpose only the `PizzaController` is injected.
 
 nuget package used for Unity from [here](https://github.com/devtrends/Unity.WebAPI): 
 > Install-Package Unity.WebApi
