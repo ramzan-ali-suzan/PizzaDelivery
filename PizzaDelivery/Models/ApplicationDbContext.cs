@@ -12,5 +12,7 @@ namespace PizzaDelivery.Models
         {
 
         }
+
+        public DbSet<Pizza> Pizzas { get; set; }
     }
 }
