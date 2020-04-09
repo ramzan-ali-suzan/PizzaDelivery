@@ -13,9 +13,9 @@ namespace PizzaDelivery.Controllers
     {
         private readonly ApplicationDbContext _context;
 
-        public PizzaController()
+        public PizzaController(ApplicationDbContext context)
         {
-            _context = new ApplicationDbContext();
+            _context = context;
         }
 
         public IEnumerable<Pizza> Get()
